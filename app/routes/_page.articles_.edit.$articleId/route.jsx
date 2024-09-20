@@ -78,10 +78,6 @@ export const action = async ({ request, params }) => {
     uploadHandler
   );
 
-  // Get the file path from the formData
-  const filePath = formData.get("document");
-  console.log("File saved at:", filePath);
-
   const articleName = formData.get("articleName")?.trim();
   const articleDescription = formData.get("articleDescription")?.trim();
   const categoryId = parseInt(formData.get("categoryId"), 10);
@@ -107,8 +103,6 @@ export const action = async ({ request, params }) => {
     errors.categoryId = "Category is required";
   }
 
-  console.log("I am here")
-
   // If there are validation errors, return them to the form
   if (Object.keys(errors).length > 0) {
     return json({ errors }, { status: 400 });
@@ -122,9 +116,10 @@ export const action = async ({ request, params }) => {
     });
 
     // If a new document is uploaded, use it, otherwise, keep the existing document
-    const documentPath = document
-      ? document?.toString()
-      : existingArticle.document;
+    const documentPath =
+      document && typeof document == "string"
+        ? document?.toString()
+        : existingArticle.document;
 
     await prisma.article.update({
       where: { id: parseInt(params.articleId) },
