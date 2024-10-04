@@ -44,13 +44,13 @@ export async function register(user) {
 }
 
 export async function login({ email, password, remember }) {
-  console.log(email, password, remember);
+  // console.log(email, password, remember);
   const user = await prisma.user.findUnique({
     where: { email },
   });
 
   if (!user || !(await bcrypt.compare(password, user.password))) {
-    console.log("Incorrect login");
+    // console.log("Incorrect login");
     return json(
       { errors: { email: null, password: null, form: `Incorrect login` } },
       { status: 400 }
@@ -109,8 +109,9 @@ export async function getUser(request) {
   try {
     const user = await prisma.user.findUnique({
       where: { id: userId },
-      select: { id: true, email: true },
+      select: { id: true, email: true, name: true },
     });
+    // console.log("user", user)
     return user;
   } catch {
     throw logout(request);

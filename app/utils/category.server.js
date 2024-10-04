@@ -16,7 +16,7 @@ export async function getAllCategories() {
 
 // Create a new Category
 export async function createCategory(name, slug) {
-  console.log({ name, slug });
+  // console.log({ name, slug });
   const category = await prisma.category.create({
     data: {
       category_name: name,

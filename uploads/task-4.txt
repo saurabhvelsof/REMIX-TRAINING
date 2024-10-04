@@ -1,0 +1,32 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MyFirstProject
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Dictionary<string, int> ageDictionary = new Dictionary<string, int>();
+
+            // Add a new value using the Add method
+            ageDictionary.Add("Saurabh", 30);
+
+            // Add another value using index notation
+            ageDictionary["Alice"] = 20;
+
+            // Loop through the dictionary and print all key-value pairs
+            Console.WriteLine("All key-value pairs in the dictionary:");
+            foreach (KeyValuePair<string, int> kvp in ageDictionary)
+            {
+                Console.WriteLine("Key: {0}, Value: {1}", kvp.Key, kvp.Value);
+            }
+
+            Console.ReadLine();
+        }
+    }
+}

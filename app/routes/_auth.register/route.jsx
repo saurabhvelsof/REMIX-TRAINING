@@ -97,7 +97,7 @@ export const action = async ({ request }) => {
     );
   }
 
-  return await register({ email, password });
+  return await register({ email, password, name });
 };
 
 export default function Register() {
@@ -122,7 +122,7 @@ export default function Register() {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    console.log(name, value);
+    // console.log(name, value);
     setFormData({
       ...formData,
       [name]: value,
@@ -168,7 +168,7 @@ export default function Register() {
         <div className="row">
           <div className="col-12">
             <div className="text-primary p-4">
-              <h5 className="text-primary mb-0">Regsiter!</h5>
+              <h5 className="text-primary mb-0">Register!</h5>
             </div>
           </div>
         </div>

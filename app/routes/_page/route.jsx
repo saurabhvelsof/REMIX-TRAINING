@@ -68,7 +68,7 @@ export const loader = async ({ request }) => {
 
   const user = await getUser(request); // Fetch the user from session
 
-  return { user: user?.email || null }; // Return user to be used in the component
+  return { user: user?.name || null }; // Return user to be used in the component
 };
 
 export default function PageLayout() {

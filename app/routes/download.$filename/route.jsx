@@ -6,7 +6,7 @@ import { requireUserId } from "../../utils/auth.server";
 export const loader = async ({ request, params }) => {
   await requireUserId(request);
   const { filename } = params;
-  console.log(filename);
+  // console.log(filename);
   // Construct the file path based on the filename
   const filePath = join(process.cwd(), "uploads", filename);
 

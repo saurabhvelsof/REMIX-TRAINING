@@ -71,7 +71,7 @@ export const action = async ({ request }) => {
   const filePath = formData.get("document");
 
   // Now you can use the filePath for further operations or save it to the database
-  console.log("File saved at:", filePath);
+  // console.log("File saved at:", filePath);
 
   const name = formData.get("articleName")?.trim();
   const description = formData.get("articleDescription")?.trim();

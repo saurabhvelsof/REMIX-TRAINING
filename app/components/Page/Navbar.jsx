@@ -19,8 +19,8 @@ export default function Navbar({ user }) {
           </div>
 
           <div className="d-flex pr-2">
-            <div className="dropdown d-inline-block">
-              <span className="d-none d-xl-inline-block ml-1" key="t-henry">
+            <div className="dropdown d-flex">
+              <span className="d-none d-xl-inline-block mr-2" key="t-henry">
                 Welcome, {user}
               </span>
               &nbsp;&nbsp;

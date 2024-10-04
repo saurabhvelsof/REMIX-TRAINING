@@ -75,7 +75,7 @@ export default function Login() {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    console.log(name, value);
+    // console.log(name, value);
     setFormData({
       ...formData,
       [name]: value,
@@ -216,28 +216,28 @@ export default function Login() {
 
               <ul className="list-inline">
                 <li className="list-inline-item">
-                  <a
+                  <Link
                     href=""
                     className="social-list-item bg-primary text-white border-primary"
                   >
                     <i className="mdi mdi-facebook"></i>
-                  </a>
+                  </Link>
                 </li>
                 <li className="list-inline-item">
-                  <a
+                  <Link
                     href=""
                     className="social-list-item bg-info text-white border-info"
                   >
                     <i className="mdi mdi-twitter"></i>
-                  </a>
+                  </Link>
                 </li>
                 <li className="list-inline-item">
-                  <a
+                  <Link
                     href=""
                     className="social-list-item bg-danger text-white border-danger"
                   >
                     <i className="mdi mdi-google"></i>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -245,11 +245,6 @@ export default function Login() {
               <Link to={`/register`} className="text-muted">
                 <i className="mdi mdi-lock mr-1"></i> Register
               </Link>
-            </div>
-            <div className="mt-4 text-center">
-              <a href="#" className="text-muted">
-                <i className="mdi mdi-lock mr-1"></i> Forgot your password?
-              </a>
             </div>
           </Form>
         </div>
