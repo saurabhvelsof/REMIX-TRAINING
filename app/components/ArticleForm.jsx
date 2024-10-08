@@ -1,6 +1,7 @@
 import { Form, Link, useActionData } from "@remix-run/react";
 import React, { useEffect, useState } from "react";
 
+// Form for adding or editing the articles.
 const ArticleForm = ({
   actionData,
   transitionState,
@@ -45,6 +46,7 @@ const ArticleForm = ({
     }));
   };
 
+  // function to validate all the form fields
   const validateForm = (event) => {
     const form = event.target;
     const errors = {};
@@ -132,8 +134,6 @@ const ArticleForm = ({
               )}
             </div>
           </div>
-        </div>
-        <div className="row">
           <div className="col-lg-6 col-md-6">
             <div className="form-group">
               <label htmlFor="articleName">
@@ -155,6 +155,8 @@ const ArticleForm = ({
               )}
             </div>
           </div>
+        </div>
+        <div className="row">
 
           <div className="col-lg-6 col-md-6">
             <div className="form-group">

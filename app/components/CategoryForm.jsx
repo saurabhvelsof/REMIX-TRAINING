@@ -1,6 +1,8 @@
 import { Form, Link, useActionData } from "@remix-run/react";
 import React, { useEffect, useState } from "react";
+import { VALIDATION_MESSAGES } from "../constants/message";
 
+// Form for adding or editing category
 const CategoryForm = ({
   actionData,
   transitionState,
@@ -41,6 +43,7 @@ const CategoryForm = ({
     }));
   };
 
+  // function to validate all the fields of the form
   const validateForm = (event) => {
     const form = event.target;
     const errors = {};
@@ -49,15 +52,15 @@ const CategoryForm = ({
     const slug = form.categorySlug.value.trim();
 
     if (!name) {
-      errors.categoryName = "Category name is required";
+      errors.categoryName = VALIDATION_MESSAGES?.CATEGORY?.NAME_REQUIRED;
     } else if (name.length < 3 || name.length > 255) {
-      errors.categoryName = "Name must be between 3 and 255 characters";
+      errors.categoryName = VALIDATION_MESSAGES?.CATEGORY?.NAME_LENGTH;
     }
 
     if (!slug) {
-      errors.categorySlug = "Category slug is required";
+      errors.categorySlug = VALIDATION_MESSAGES?.CATEGORY?.SLUG_REQUIRED;
     } else if (slug.length < 3 || slug.length > 60) {
-      errors.categorySlug = "Slug must be between 3 and 60 characters";
+      errors.categorySlug = VALIDATION_MESSAGES?.CATEGORY?.SLUG_LENGTH;
     }
 
     setClientErrors(errors);

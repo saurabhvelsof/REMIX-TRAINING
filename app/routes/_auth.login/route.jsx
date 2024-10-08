@@ -127,7 +127,7 @@ export default function Login() {
       <div className="card-body pt-2">
         <div className="p-2">
           <Form
-            className="form-horizontal"
+            className="form-horizontal veloValidateForm"
             method="post"
             onSubmit={validateForm}
           >
@@ -151,15 +151,16 @@ export default function Login() {
                 autoComplete="email"
                 aria-invalid={actionData?.errors?.email ? true : undefined}
                 aria-describedby="email-error"
+                data-rule-email="true"
               />
               {actionData?.errors?.email ? (
                 <div className="pt-1 text-danger" id="email-error">
                   {actionData.errors.email}
                 </div>
               ) : null}
-              {clientErrors.email && (
+              {/* {clientErrors.email && (
                 <p className="text-danger">{clientErrors.email}</p>
-              )}
+              )} */}
             </div>
 
             <div className="form-group">
@@ -176,15 +177,16 @@ export default function Login() {
                 autoComplete="current-password"
                 aria-invalid={actionData?.errors?.password ? true : undefined}
                 aria-describedby="password-error"
+                data-rule-mandatory="true"
               />
               {actionData?.errors?.password ? (
                 <div className="pt-1 text-danger" id="password-error">
                   {actionData.errors.password}
                 </div>
               ) : null}
-              {clientErrors.password && (
+              {/* {clientErrors.password && (
                 <p className="text-danger">{clientErrors.password}</p>
-              )}
+              )} */}
             </div>
 
             <div className="custom-control custom-checkbox">

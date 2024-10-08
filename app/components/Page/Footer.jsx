@@ -1,3 +1,4 @@
+// Footer of the app.
 export default function Footer() {
   return (
     <>

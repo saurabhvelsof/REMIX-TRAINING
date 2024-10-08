@@ -3,6 +3,7 @@ import BreadcrumbRow from "../../components/BreadcrumbRow";
 import CategoryForm from "../../components/CategoryForm";
 import { prisma } from "../../utils/prisma.server";
 import { useEffect, useTransition } from "react";
+import { VALIDATION_MESSAGES } from "../../constants/message";
 // import { getUserSession, commitSession } from "../../utils/auth.server";
 
 export const meta = () => {
@@ -22,7 +23,7 @@ export const action = async ({ request }) => {
 
   // Server-side validation
   if (!name) {
-    errors.categoryName = "Category name is required";
+    errors.categoryName = VALIDATION_MESSAGES?.CATEGORY?.NAME_REQUIRED;
   } else if (name.length < 3 || name.length > 255) {
     errors.categoryName = "Name must be between 3 and 255 characters";
   }

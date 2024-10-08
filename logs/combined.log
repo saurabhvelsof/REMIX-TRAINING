@@ -1,0 +1,80 @@
+2024-10-08T08:11:07.102Z warn: Failed to retrieve userId from session.
+2024-10-08T08:11:07.105Z warn: User not found in session, returning null.
+2024-10-08T08:11:36.891Z warn: Failed to retrieve userId from session.
+2024-10-08T08:11:36.892Z warn: User not found in session, returning null.
+2024-10-08T08:11:59.901Z info: User logged in: saurabh.singh@velsof.com
+2024-10-08T08:11:59.902Z info: Created session for userId: 1
+2024-10-08T08:11:59.920Z info: Authorized access for userId: 1
+2024-10-08T08:11:59.921Z info: Retrieved userId: 1
+2024-10-08T08:11:59.947Z info: Fetched user details: saurabh.singh@velsof.com
+2024-10-08T08:11:59.969Z info: Authorized access for userId: 1
+2024-10-08T08:11:59.969Z info: Retrieved userId: 1
+2024-10-08T08:11:59.974Z info: Authorized access for userId: 1
+2024-10-08T08:12:00.110Z info: Fetched user details: saurabh.singh@velsof.com
+2024-10-08T08:14:01.103Z info: Authorized access for userId: 1
+2024-10-08T08:14:01.104Z info: Authorized access for userId: 1
+2024-10-08T08:14:01.105Z info: Retrieved userId: 1
+2024-10-08T08:14:01.110Z info: Fetched user details: saurabh.singh@velsof.com
+2024-10-08T08:14:09.092Z info: Authorized access for userId: 1
+2024-10-08T08:14:09.092Z info: Authorized access for userId: 1
+2024-10-08T08:14:09.093Z info: Retrieved userId: 1
+2024-10-08T08:14:09.095Z info: Fetched user details: saurabh.singh@velsof.com
+2024-10-08T08:14:55.466Z info: Authorized access for userId: 1
+2024-10-08T08:14:55.466Z info: Authorized access for userId: 1
+2024-10-08T08:14:55.467Z info: Retrieved userId: 1
+2024-10-08T08:14:55.479Z info: Fetched user details: saurabh.singh@velsof.com
+2024-10-08T08:15:02.085Z info: Authorized access for userId: 1
+2024-10-08T08:15:02.086Z info: Authorized access for userId: 1
+2024-10-08T08:15:02.087Z info: Retrieved userId: 1
+2024-10-08T08:15:02.089Z info: Fetched user details: saurabh.singh@velsof.com
+2024-10-08T08:15:10.073Z info: Authorized access for userId: 1
+2024-10-08T08:15:10.073Z info: Authorized access for userId: 1
+2024-10-08T08:15:10.074Z info: Retrieved userId: 1
+2024-10-08T08:15:10.077Z info: Fetched user details: saurabh.singh@velsof.com
+2024-10-08T08:15:53.698Z info: Authorized access for userId: 1
+2024-10-08T08:15:55.119Z info: Authorized access for userId: 1
+2024-10-08T08:15:55.844Z info: Authorized access for userId: 1
+2024-10-08T08:16:22.063Z info: Authorized access for userId: 1
+2024-10-08T08:16:22.064Z info: Authorized access for userId: 1
+2024-10-08T08:16:22.065Z info: Retrieved userId: 1
+2024-10-08T08:16:22.074Z info: Fetched user details: saurabh.singh@velsof.com
+2024-10-08T08:16:25.952Z info: Authorized access for userId: 1
+2024-10-08T08:16:25.952Z info: Authorized access for userId: 1
+2024-10-08T08:16:25.953Z info: Retrieved userId: 1
+2024-10-08T08:16:25.955Z info: Fetched user details: saurabh.singh@velsof.com
+2024-10-08T08:16:31.077Z info: Authorized access for userId: 1
+2024-10-08T08:16:31.077Z info: Authorized access for userId: 1
+2024-10-08T08:16:31.079Z info: Retrieved userId: 1
+2024-10-08T08:16:31.081Z info: Fetched user details: saurabh.singh@velsof.com
+2024-10-08T08:16:35.050Z info: Authorized access for userId: 1
+2024-10-08T08:16:35.051Z info: Authorized access for userId: 1
+2024-10-08T08:16:35.051Z info: Retrieved userId: 1
+2024-10-08T08:16:35.053Z info: Fetched user details: saurabh.singh@velsof.com
+2024-10-08T08:16:36.062Z info: Authorized access for userId: 1
+2024-10-08T08:16:36.063Z info: Authorized access for userId: 1
+2024-10-08T08:16:36.064Z info: Retrieved userId: 1
+2024-10-08T08:16:36.066Z info: Fetched user details: saurabh.singh@velsof.com
+2024-10-08T08:16:42.060Z info: Authorized access for userId: 1
+2024-10-08T08:16:42.060Z info: Authorized access for userId: 1
+2024-10-08T08:16:42.061Z info: Retrieved userId: 1
+2024-10-08T08:16:42.064Z info: Fetched user details: saurabh.singh@velsof.com
+2024-10-08T08:16:51.058Z info: Authorized access for userId: 1
+2024-10-08T08:16:51.059Z info: Authorized access for userId: 1
+2024-10-08T08:16:51.059Z info: Retrieved userId: 1
+2024-10-08T08:16:51.060Z info: Fetched user details: saurabh.singh@velsof.com
+2024-10-08T08:17:28.990Z warn: Unauthorized access attempt, redirecting to login.
+2024-10-08T08:17:28.991Z error: Error in requireUserId: undefined
+2024-10-08T08:17:28.993Z warn: Unauthorized access attempt, redirecting to login.
+2024-10-08T08:17:28.993Z error: Error in requireUserId: undefined
+2024-10-08T08:17:29.012Z warn: Failed to retrieve userId from session.
+2024-10-08T08:17:29.012Z warn: User not found in session, returning null.
+2024-10-08T09:23:23.129Z info: User logged in: saurabh.singh@velsof.com
+2024-10-08T09:23:23.136Z info: Created session for userId: 1
+2024-10-08T09:23:23.179Z info: Authorized access for userId: 1
+2024-10-08T09:23:23.180Z info: Retrieved userId: 1
+2024-10-08T09:23:23.184Z info: Fetched user details: saurabh.singh@velsof.com
+2024-10-08T09:23:23.298Z info: Authorized access for userId: 1
+2024-10-08T09:23:23.299Z info: Retrieved userId: 1
+2024-10-08T09:23:23.304Z info: Authorized access for userId: 1
+2024-10-08T09:23:23.308Z info: Fetched user details: saurabh.singh@velsof.com
+2024-10-08T09:23:34.456Z info: Authorized access for userId: 1

@@ -1,5 +1,6 @@
 import React from "react";
 
+// Breadcrumb component for navigation.
 const BreadcrumbRow = ({ title, heading }) => {
   return (
     <>

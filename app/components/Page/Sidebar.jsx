@@ -1,5 +1,6 @@
 import { Link } from "@remix-run/react";
 
+// Left Sidebar of the app having menus like Dashboard, Article and Category.
 export default function Sidebar() {
   return (
     <>

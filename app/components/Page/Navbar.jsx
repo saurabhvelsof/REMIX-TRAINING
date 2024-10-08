@@ -1,5 +1,7 @@
 import { Form, Link } from "@remix-run/react";
 import LogoSrc from "../../assets/images/velocity_logo.png?url";
+
+// Navigation bar of the app
 export default function Navbar({ user }) {
   return (
     <>
